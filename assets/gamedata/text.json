@@ -1,0 +1,244 @@
+{
+    "gameText" : [
+        {
+            "id": 1,
+            "text": ["Chumm mit cho star wars luege!", "isch würklch o z letscht mau"]
+        },
+        {
+            "id": 2,
+            "text": ["Werum het ds Spiu", "eigentlich keni SoundEffects?"]
+        },
+        {
+            "id": 3,
+            "text": ["Ke zit für ds!"]
+        },
+        {
+            "id": 4,
+            "text": ["I bi dr lukas! Ä mächtige Jedi", "U du bechunsch iz de gd Stress"]
+        },
+        {
+            "id": 5,
+            "text": ["Fing mau Royality-free LaserSchwert Effekte.", "Da bechunsch Vögu!"]
+        },
+        {
+            "id": 6,
+            "text": ["Tschüss"]
+        },
+        {
+            "id": 7,
+            "text": ["So dumm!", "du gwinnsch"]
+        },
+        {
+            "id": 8,
+            "text": ["HUCH!", "Ok! OK! Du gwinnsch", "Aber i chume widr!"]
+        },
+        {
+            "id": 9,
+            "text": ["u wäg däm quatschisch mi a", "from the side of life?"]
+        },
+        {
+            "id": 10,
+            "text": ["NIEMAUS! Zersch muesch zeige was de druff hesch!"]
+        },
+        {
+            "id": 11,
+            "text": ["...", "hole iz de polizei"]
+        },
+        {
+            "id": 12,
+            "text": ["Ja ga nä no ga ne Velotour mache oder so", "Bi scho ne geile Siech"]
+        },
+        {
+            "id": 13,
+            "text": ["Carpe-diem u so", "het gloubs dr Faust gseit"]
+        },
+        {
+            "id": 14,
+            "text": ["Ja!", "macht öbbe gd bock zum inesuufe"]
+        },
+        {
+            "id": 15,
+            "text": [
+                "Lukas...",
+                "LUKAS!!",
+                "Los zue, du dubbu!",
+                "Du muesch di drü gigle überzüge",
+                "STEFAN...",
+                "KUSI...",
+                "U dr DÄMU",
+                "mit is chino z cho!!",
+                "Ds geit nume mit ere Rundi...",
+                "...",
+                "BELEIDIGUNGS LASER SCHWERTKAMPF",
+                "Due muesch aui 3 Dubble Schlah",
+                "umer z Passwort säge!"
+            ]
+        },
+        {
+            "id": 16,
+            "text": [
+                "OU MAN",
+                "Du hesch gwunne!",
+                "I chume mit",
+                "Mis Passwort isch..",
+                "DR"
+            ]
+        },
+        {
+            "id": 17,
+            "text": [
+                "HOPPLA",
+                "Äuä scho chli bsoffe!",
+                "Du gwinnsch...",
+                "Mis Passwort isch..",
+                "LUKAS"
+            ]
+        },
+        {
+            "id": 18,
+            "text": [
+                "Schad",
+                "Du gwinnsch...",
+                "Mis Passwort isch..",
+                "STINKT"
+            ]
+        },
+        {
+            "id": 19,
+            "text": [
+                "U de...",
+                "weisch z Passwort?"
+            ]
+        },
+        {
+            "id": 20,
+            "text": [ "ÄCH...!","DR", "LUKAS", "STINKT"]
+        },
+        {
+            "id": 21,
+            "text": [
+                "HAHA!HAHA!",
+                "...",
+                "HAHA!HAHA!",
+                "...",
+                "HAHA!HAHA!",
+                "...",
+                "Genau!"
+            ]
+        },
+        {
+            "id": 100,
+            "text": ["Damian Häner", "Post Finance"]
+        },
+        {
+            "id": 103,
+            "text": ["Gigu!", "I bi dr Kusi", "ga iz de gd ga inebiere"]
+        },
+        {
+            "id": 105,
+            "text": ["Hallo!", "bi dr Stifu", "ws bisch de für ne dubbu?"]
+        },
+        {
+            "id": 1001,
+            "text": ["Äh..", "du bisch doof!"]
+        },
+        {
+            "id": 1004,
+            "text": ["Du kämpfsch wine chue"]
+        },
+        {
+            "id": 1005,
+            "text": ["Ha mau e Hümpu gha, dä isch gschider aus du!"]
+        },
+        {
+            "id": 1006,
+            "text": ["Die Narbe hani vomne mächtige Kampf"]
+        },
+        {
+            "id": 1007,
+            "text": ["Du hesch d'Maniere vomne Penner"]
+        },
+        {
+            "id": 1008,
+            "text": ["Ha ghört du seigsch e riise Dubbu!"]
+        },
+        {
+            "id": 1009,
+            "text": ["Du hesch ke chance gäg mini Intelligänz, du arme cheib"]
+        },
+        {
+            "id": 2001,
+            "text": ["Ach ja!"]
+        },
+        {
+            "id": 2002,
+            "text": ["Quatsch mi nid a vor side of life!"]
+        },
+        {
+            "id": 2003,
+            "text": ["Eh..", "du bisch doch e Aff"]
+        },
+        {
+            "id": 2004,
+            "text": ["Wie passend! du kämpfsch wine Püüru"]
+        },
+        {
+            "id": 2005,
+            "text": ["Ah so - Vo däm hesch äuä aus glehrt wo de chasch!"]
+        },
+        {
+            "id": 2006,
+            "text": ["I hofe du hesch iz glehrt, das meh nid Nase-Grüblet"]
+        },
+        {
+            "id": 2007,
+            "text": ["Ha wöue sicher gah, dass di wohl füeusch"]
+        },
+        {
+            "id": 2008,
+            "text": ["Aha!, Wenigschtens hett scho öbber mau vo mir ghört"]
+        },
+        {
+            "id": 2009,
+            "text": ["De wäri ja zimlech im Arsch, wese jemaus benützisch"]
+        }
+    ],
+    "insultSolutions":[
+        {
+            "id": 1001,
+            "solutionId": 2001
+        },
+        {
+            "id": 1002,
+            "solutionId": 2002
+        },
+        {
+            "id": 1003,
+            "solutionId" : 2003
+        },
+        {
+            "id": 1004,
+            "solutionId" : 2004
+        },
+        {
+            "id": 1005,
+            "solutionId" : 2005
+        },
+        {
+            "id": 1006,
+            "solutionId" : 2006
+        },
+        {
+            "id": 1007,
+            "solutionId" : 2007
+        },
+        {
+            "id": 1008,
+            "solutionId" : 2008
+        },
+        {
+            "id": 1009,
+            "solutionId" : 2009
+        }
+    ]
+}

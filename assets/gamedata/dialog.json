@@ -1,0 +1,86 @@
+{
+    "people" : [
+        {
+            "name" : "damian",
+            "textMapping" : [
+                {
+                    "requestTextIds": [1],
+                    "responseTextId" : 2
+                },
+                {
+                  "requestTextIds": [2],
+                  "responseTextId" : 12
+                }
+            ],
+            "actionMapping" : [
+                {
+                    "requestTextIds": [1,4],
+                    "responseAction": "startFight"
+                },
+                {
+                    "requestTextIds": [3],
+                    "responseAction" : "quit"
+                }
+            ],
+            "looseText" : 9,
+            "introText" : 100,
+            "playerOptions" : [1,2,3,4],
+            "insultOptions" : [1005,1006,1007,1009],
+            "insultSolutions" : [2001,2002,2003,2005,2007,2009]
+        },
+        {
+          "name" : "markus",
+          "textMapping" : [
+            {
+              "requestTextIds": [1],
+              "responseTextId" : 2
+            },
+            {
+              "requestTextIds": [2],
+              "responseTextId" : 14
+            }
+          ],
+          "actionMapping" : [
+            {
+              "requestTextIds": [1,4],
+              "responseAction": "startFight"
+            },
+            {
+              "requestTextIds": [3],
+              "responseAction" : "quit"
+            }
+          ],
+          "introText" : 103,
+          "playerOptions" : [1,2,3,4],
+          "insultOptions" : [1004,1006,1007,1008],
+          "insultSolutions" : [2001,2002,2003,2004,2006,2008]
+        },
+        {
+          "name" : "stefan",
+          "textMapping" : [
+            {
+              "requestTextIds": [1],
+              "responseTextId" : 10
+            },
+            {
+              "requestTextIds": [2],
+              "responseTextId" : 5
+            }
+          ],
+          "actionMapping" : [
+            {
+              "requestTextIds": [4],
+              "responseAction": "startFight"
+            },
+            {
+              "requestTextIds": [3],
+              "responseAction" : "quit"
+            }
+          ],
+          "introText" : 105,
+          "playerOptions" : [1,2,3,4],
+          "insultOptions" : [1004,1005,1006,1008,1009],
+          "insultSolutions" : [2001,2002,2003,2007,2008,2009]
+        }
+    ]
+}
