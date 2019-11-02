@@ -4,8 +4,6 @@
 
 # Konfigurationen JSON
 
-## Laserschwert Beleidungs-Schwertkampf (Konfiguration).
-
 ### /assets/gamedata/text.json
 
 Alle Dialoge sind in text.json abgelegt.
