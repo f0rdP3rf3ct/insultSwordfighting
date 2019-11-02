@@ -66,7 +66,7 @@ Alle Personen-Konfigurationen sind in dialog.json abgelegt
 
 ## Features
 - Sprachoptionen über JSON konfigurierbar
-- Kann mit Webpack gebuildet werden
+- Webpack
 
 # Setup
 Folgende Schritte...
