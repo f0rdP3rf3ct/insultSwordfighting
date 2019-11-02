@@ -22,7 +22,7 @@
                     "responseAction" : "quit"
                 }
             ],
-            "looseText" : 9,
+            "looseText" : 17,
             "introText" : 100,
             "playerOptions" : [1,2,3,4],
             "insultOptions" : [1005,1006,1007,1009],
@@ -50,6 +50,7 @@
               "responseAction" : "quit"
             }
           ],
+          "looseText" : 16,
           "introText" : 103,
           "playerOptions" : [1,2,3,4],
           "insultOptions" : [1004,1006,1007,1008],
@@ -77,6 +78,7 @@
               "responseAction" : "quit"
             }
           ],
+          "looseText" : 18,
           "introText" : 105,
           "playerOptions" : [1,2,3,4],
           "insultOptions" : [1004,1005,1006,1008,1009],

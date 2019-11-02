@@ -56,21 +56,10 @@ export default class extends Phaser.State {
       x: this.world.centerX + 120,
       y: this.world.centerY - 50,
       speechColor: 0xFF0000,
-      reverseFightAnimation: true
+      reverseFightAnimation: true,
     })
 
-    // Set loose dialog
-    switch (this.enemyName) {
-      case 'markus':
-        this.enemy.looseDialogId = 16
-        break
-      case 'damian':
-        this.enemy.looseDialogId = 17
-        break
-      case 'stefan':
-        this.enemy.looseDialogId = 18
-        break
-    }
+    this.enemy.looseDialogId = this.dialogData.looseDialogId
 
     this.player = new Jedi({
       game: this.game,
