@@ -24,6 +24,8 @@ export default class extends Phaser.State {
     this.load.atlas('gameAssets', 'assets/spriteSheets/gameAssets.png', 'assets/spriteSheets/gameAssets.json', Phaser.Loader.TEXTURE_ATLAS_JSON_HASH)
     this.load.atlas('enemy', 'assets/spriteSheets/enemy.png', 'assets/spriteSheets/enemy.json', Phaser.Loader.TEXTURE_ATLAS_JSON_HASH)
     this.load.atlas('figures', 'assets/spriteSheets/figuresSpritesheet.png', 'assets/spriteSheets/figuresSpritesheet.json', Phaser.Loader.TEXTURE_ATLAS_JSON_HASH)
+    this.load.spritesheet('startButton', 'assets/spriteSheets/startButton.png', 152, 48)
+
     // Images
     this.load.image('backgroundCombat', 'assets/spriteSheets/combat_background_800x600.png')
     this.load.image('map', 'assets/spriteSheets/map_800x600.jpg')
@@ -32,13 +34,12 @@ export default class extends Phaser.State {
   }
 
   create () {
-
     const textObject = this.game.cache.getJSON('text')
     const dialogObject = this.game.cache.getJSON('dialog')
 
     this.game.dialogService.setTextObject(textObject)
     this.game.dialogService.setDialogObject(dialogObject)
 
-    this.state.start('Intro')
+    this.state.start('StartScreen')
   }
 }

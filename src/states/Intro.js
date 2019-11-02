@@ -42,7 +42,6 @@ export default class extends Phaser.State {
   addAssetsToGame () {
     this.game.add.existing(this.yoda)
     this.game.add.existing(this.player)
-
     // Mirror Player sprites
     this.player.scale.x *= -1
     this.player.dialog.scale.x *= -1
@@ -63,5 +62,4 @@ export default class extends Phaser.State {
   onPlayerSpeechEnd () {
     this.game.state.start('Map')
   }
-
 }

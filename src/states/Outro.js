@@ -77,8 +77,7 @@ export default class extends Phaser.State {
   onPlayerSpeechEnd2 () {
     this.player.waveArm.animations.stop('fight')
     this.player.fightArm.animations.stop('talk')
-
-    this.game.state.start('Map')
+    this.game.state.start('StartScreen')
   }
 
 }

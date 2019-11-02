@@ -8,6 +8,8 @@ import CombatState from './states/Combat'
 import IntroState from './states/Intro'
 import MapState from './states/Map'
 import OutroState from './states/Outro'
+import StartScreen from './states/StartScreen'
+
 
 import config from './config'
 import DialogService from './dialogService'
@@ -26,6 +28,7 @@ class Game extends Phaser.Game {
     this.state.add('Map', MapState, false)
     this.state.add('Combat', CombatState, false)
     this.state.add('Outro', OutroState, false)
+    this.state.add('StartScreen', StartScreen, false)
 
     // Instantiate stateless services
     this.dialogService = new DialogService()

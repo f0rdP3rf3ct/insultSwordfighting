@@ -1,7 +1,7 @@
 export default class dialogService {
   /**
-   * @param {object} text
-   * @param {object} dialog
+   * @param {object} textObject
+   * @param {object} dialogObject
    */
   constructor (textObject, dialogObject) {
     this.textObject = textObject
