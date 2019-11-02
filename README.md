@@ -2,6 +2,10 @@
 
 ![ingame image](https://battleship.marcgruber.ch/splash.png)
 
+## Features
+- Dialogoptionen über JSON konfigurierbar
+- Webpack
+
 # Konfigurationen JSON
 
 ### /assets/gamedata/text.json
@@ -60,11 +64,6 @@ Alle Personen-Konfigurationen sind in dialog.json abgelegt
             "insultOptions" : [1005,1006,1007,1009], // gameText ids providing insult options for character
             "insultSolutions" : [2001,2002,2003,2005,2007,2009] // gameText ids known parry options
         },
-
-
-## Features
-- Dialogoptionen über JSON konfigurierbar
-- Webpack
 
 # Setup
 Folgende Schritte...
