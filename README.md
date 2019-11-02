@@ -25,7 +25,7 @@ Beleidungstexte in "insultSolutions" Array:
     "insultSolutions" : [
         {
             "id": 1001 // gameText id,
-            "solutionId": 2001 // Parrier gameText id
+            "solutionId": 2001 // Parry gameText id
         }
 
 ### /assets/gamedata/dialog.json
