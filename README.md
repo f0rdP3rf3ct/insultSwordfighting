@@ -1,4 +1,4 @@
-# Konfiguriertbarer Beleidungsschwertkampf in monkey island style
+# Phaser CE: Konfiguriertbarer Beleidungsschwertkampf in monkey island style
 
 ![ingame image](https://battleship.marcgruber.ch/splash.png)
 
