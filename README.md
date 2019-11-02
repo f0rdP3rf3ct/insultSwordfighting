@@ -1,5 +1,7 @@
 # Konfiguriertbarer Beleidungsschwertkampf in monkey island style
 
+![ingame image](https://battleship.marcgruber.ch/splash.png)
+
 # Konfigurationen JSON
 
 ## Laserschwert Beleidungs-Schwertkampf (Konfiguration).
