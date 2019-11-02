@@ -59,7 +59,7 @@ export default class extends Phaser.State {
       reverseFightAnimation: true,
     })
 
-    this.enemy.looseDialogId = this.dialogData.looseDialogId
+    this.enemy.looseDialogId = this.dialogData.looseText
 
     this.player = new Jedi({
       game: this.game,
@@ -356,7 +356,6 @@ export default class extends Phaser.State {
    * @param {Jedi} looserJedi
    */
   looseCombat (looserJedi) {
-    console.log('lost: ', looserJedi)
     const textObjecId = looserJedi.looseDialogId
     const textObject = this.game.dialogService.getTextObject(textObjecId)
 
