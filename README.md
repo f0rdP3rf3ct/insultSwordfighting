@@ -11,7 +11,7 @@
 Alle Dialoge sind in text.json abgelegt.
 Allgemeine Spieletexte in "gameText" Array:
 
-   - text: Array of srings, welche nach einander abgespielt werden
+   - text: Array of strings, welche nacheinander abgespielt werden
 
     "gameText" : [
         {
@@ -65,7 +65,7 @@ Alle Personen-Konfigurationen sind in dialog.json abgelegt
 
 
 ## Features
-- Sprachoptionen über JSON konfigurierbar
+- Dialogoptionen über JSON konfigurierbar
 - Webpack
 
 # Setup
