@@ -1,113 +1,114 @@
-# Phaser + ES6 + Webpack.
-#### A bootstrap project to create games with Phaser + ES6 + Webpack.
+# Konfiguriertbarer Beleidungsschwertkampf in monkey island style
 
-![Phaser+ES6+Webpack](https://raw.githubusercontent.com/lean/phaser-es6-webpack/master/assets/images/phaser-es6-webpack.jpg)
+# Konfigurationen JSON
 
+## Laserschwert Beleidungs-Schwertkampf (Konfiguration).
 
-[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+### /assets/gamedata/text.json
 
-## Phaser 3 supported in this branch: https://github.com/lean/phaser-es6-webpack/tree/phaser3
-## Typescript supported in this branch: https://github.com/lean/phaser-es6-webpack/tree/typescript
+Alle Dialoge sind in text.json abgelegt.
+Allgemeine Spieletexte in "gameText" Array:
+
+   - text: Array of srings, welche nach einander abgespielt werden
+
+    "gameText" : [
+        {
+            "id": 1,
+            "text": ["Hello my name is Peter", "nice to meet you"]
+        }
+
+Beleidungstexte in "insultSolutions" Array:
+   
+   - id: Eine gameText id
+   - solutionId: gameText id für erfolgreiches parrieren
+
+    "insultSolutions" : [
+        {
+            "id": 1001 // gameText id,
+            "solutionId": 2001 // Parrier gameText id
+        }
+
+### /assets/gamedata/dialog.json
+
+Alle Personen-Konfigurationen sind in dialog.json abgelegt
+
+        {
+            "name" : "Peter", // name of character
+            "textMapping" : [
+                {
+                    "requestTextIds": [1], // gameText ids recievied from sender
+                    "responseTextId" : 2 // response to requestTextId
+                },
+                {
+                  "requestTextIds": [2],
+                  "responseTextId" : 12
+                }
+            ],
+            "actionMapping" : [
+                {
+                    "requestTextIds": [1,4], // gameTest ids recieved from sender
+                    "responseAction": "startFight" // action called in response
+                },
+                {
+                    "requestTextIds": [3],
+                    "responseAction" : "quit"
+                }
+            ],
+            "looseText" : 9, // gameText id played when combat is lost
+            "introText" : 100, // gameText id played on encounter
+            "playerOptions" : [1,2,3,4], // gameText ids provided to player to select
+            "insultOptions" : [1005,1006,1007,1009], // gameText ids providing insult options for character
+            "insultSolutions" : [2001,2002,2003,2005,2007,2009] // gameText ids known parry options
+        },
+
 
 ## Features
-- ESLINT with JavaScript Standard Style configuration
-- Next generation of Javascript
-- Browsers are automatically updated as you change project files
-- Webpack ready
-- WebFont Loader
-- Multilanguage support
-- PWA Support
-
-## Typescript 
-If you need typescript support checkout the ```typescript``` branch. Thanks to @MatsMaker
+- Sprachoptionen über JSON konfigurierbar
+- Kann mit Webpack gebuildet werden
 
 # Setup
-You'll need to install a few things before you have a working copy of the project.
+Folgende Schritte...
 
-## 1. Clone this repo:
+## 1. Dieses Repo klonen:
 
-Navigate into your workspace directory.
+in Workspace klonen:
+```git clone https://github.com/f0rdP3rf3ct/insultSwordfighting.git```
 
-Run:
-
-```git clone https://github.com/lean/phaser-es6-webpack.git```
-
-## 2. Install node.js and npm:
+## 2. node.js & npm installieren:
 
 https://nodejs.org/en/
 
 
-## 3. Install dependencies (optionally you can install [yarn](https://yarnpkg.com/)):
+## 3. Dependencies installieren ([yarn](https://yarnpkg.com/)):
 
 Navigate to the cloned repo's directory.
 
-Run:
+npm:
 
 ```npm install``` 
 
-or if you chose yarn, just run ```yarn```
+yarn: 
 
-## 4. Run the development server:
+```yarn```
+
+## 4. Dev-Server starten:
 
 Run:
 
 ```npm run dev```
 
-This will run a server so you can run the game in a browser. It will also start a watch process, so you can change the source and the process will recompile and refresh the browser automatically.
+http://localhost:3000 um das Spiel anzusehen.
+Filewatch & Auto Reload werden gsestartet.
 
-To run the game, open your browser and enter http://localhost:3000 into the address bar.
 
-
-## Build for deployment:
+## Build deployment:
 
 Run:
 
 ```npm run deploy```
 
-This will optimize and minimize the compiled bundle.
-
-## Deploy for cordova:
-Make sure to uncomment the cordova.js file in the src/index.html and to update config.xml with your informations. (name/description...)
-
-More informations about the cordova configuration:
-https://cordova.apache.org/docs/en/latest/config_ref/
-
-There is 3 platforms actually tested and supported : 
-- browser
-- ios
-- android
-
-First run (ios example):
-
-```
-npm run cordova
-cordova platform add ios
-cordova run ios
-```
-
-Update (ios example):
-
-```
-npm run cordova
-cordova platform update ios
-cordova run ios
-```
-
-This will optimize and minimize the compiled bundle.
-
-## Config:
-before you get to work you will surely want to check the config file. You could setup dimensions, webfonts, etc
-
-## Webfonts:
-In the config file you can specify which webfonts you want to include. In case you do not want to use webfonts simply leave the array empty
+Optmiert und minimized bundles
 
 ## Credits
-Big thanks to these great repos:
-
-https://github.com/belohlavek/phaser-es6-boilerplate
-
-https://github.com/cstuncsik/phaser-es6-demo
-
-## Contributors
-
-https://github.com/RenaudROHLINGER
+Das Spiel wurde mit dieser Boilerplate umgesetzt:
+```git clone https://github.com/lean/phaser-es6-webpack.git```
