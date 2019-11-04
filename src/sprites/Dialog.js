@@ -33,8 +33,8 @@ export default class extends Phaser.Sprite {
   }
 
   createButtons () {
-    this.upButton = this.game.add.button(-200, 0, 'gameAssets', this.onArrowUpClick, this, 'arrow_up', 'arrow_up', 'arrow_up')
-    this.downButton = this.game.add.button(-200, 50, 'gameAssets', this.onArrowDownClick, this, 'arrow_down', 'arrow_down', 'arrow_down')
+    this.upButton = this.game.add.button(-150, 0, 'gameAssets', this.onArrowUpClick, this, 'arrow_up', 'arrow_up', 'arrow_up')
+    this.downButton = this.game.add.button(-150, 50, 'gameAssets', this.onArrowDownClick, this, 'arrow_down', 'arrow_down', 'arrow_down')
 
     this.upButton.x = 0
     this.downButton.x = 0

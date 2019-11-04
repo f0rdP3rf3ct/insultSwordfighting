@@ -6,7 +6,6 @@ export default class extends Phaser.State {
   init () {
     // Static background
     this.background = this.add.sprite(0, 0, 'map')
-    this.backgroundSound = this.game.add.audio('backgroundSound', 1)
 
     // const
     this.ENEMY_SPAWN_SEED = ['damian', 'markus', 'stefan']
@@ -75,9 +74,6 @@ export default class extends Phaser.State {
     }
 
     this.setupTopLayer()
-
-    // Spawn new enemies every n seconds
-    this.backgroundSound.play()
   }
 
   checkWinCondition () {
@@ -92,7 +88,7 @@ export default class extends Phaser.State {
     const startingPoint = this.lookupNavPointCoord('a')
 
     // Sprite props
-    this.playerSprite = this.add.sprite(startingPoint.x, startingPoint.y, 'playerMap')
+    this.playerSprite = this.add.sprite(startingPoint.x, startingPoint.y, 'player_map')
     this.game.physics.arcade.enable(this.playerSprite)
     this.playerSprite.enableBody = true
 
@@ -109,7 +105,8 @@ export default class extends Phaser.State {
     const startingPoint = this.lookupNavPointCoord(randomStartNavPoint)
 
     // Create new enemy
-    const enemy = this.add.sprite(startingPoint.x, startingPoint.y, 'playerMap')
+    const type = Phaser.ArrayUtils.getRandomItem(this.ENEMY_SPAWN_SEED)
+    const enemy = this.add.sprite(startingPoint.x, startingPoint.y, type + '_map')
     // Register input events
     enemy.events.onInputOver.add(this.onInputOverEnemy, this)
     enemy.events.onInputOut.add(this.onInputOutEnemy, this)
@@ -121,7 +118,6 @@ export default class extends Phaser.State {
     enemy.destroyOnTarget = true
 
     // get random type
-    const type = Phaser.ArrayUtils.getRandomItem(this.ENEMY_SPAWN_SEED)
     enemy.name = type
     enemy.type = type
 
@@ -130,7 +126,7 @@ export default class extends Phaser.State {
 
   spawnYoda () {
     const startingPoint = this.lookupNavPointCoord('m')
-    const yoda = this.add.sprite(startingPoint.x, startingPoint.y, 'playerMap')
+    const yoda = this.add.sprite(startingPoint.x, startingPoint.y, 'yoda_map')
     yoda.events.onInputOver.add(this.onInputOverEnemy, this)
     yoda.events.onInputOut.add(this.onInputOutEnemy, this)
     this.enemyGroup.add(yoda)
@@ -185,7 +181,6 @@ export default class extends Phaser.State {
    * @param {Phaser.Sprite} enemy
    */
   onOverlap (player, enemy) {
-    this.backgroundSound.destroy()
     if (enemy.type === 'yoda') {
       this.state.start('Outro')
     } else {
@@ -272,7 +267,6 @@ export default class extends Phaser.State {
     this.game.input.addMoveCallback(function (pointer, x, y) {
       this.mouseCursor.x = x
       this.mouseCursor.y = y
-      console.log(`x: ${x}  / y: ${y}`)
     }, this)
   }
 

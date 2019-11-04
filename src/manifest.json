@@ -1,12 +1,13 @@
 {
-    "short_name": "swInsultFighting",
-    "name": "swInsultFighting",
-    "start_url": "./index.html",
-    "display": "standalone",
-    "theme_color": "#ffffff",
-    "background_color": "#000000",
-    "description": "Star Wars Insult Fighting Game",
-    "icons": [{
+  "short_name": "Beleidigungs Schwärtkampf",
+  "name": "Beleidigungs Schwärtkampf",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#312352",
+  "background_color": "#312352",
+  "description": "Insult Fighting Game",
+  "icons": [
+    {
       "src": "assets/images/mushroom2.png",
       "sizes": "48x48",
       "type": "image/png"
@@ -20,5 +21,6 @@
       "src": "assets/images/icon-512px.png",
       "sizes": "512x512",
       "type": "image/png"
-    }]
-  }
+    }
+  ]
+}

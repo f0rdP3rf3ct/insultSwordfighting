@@ -117,7 +117,7 @@ export default class extends Phaser.State {
    * @param {number} gameTextId
    * @returns {array}
    */
-  removeFormPlayerDialogOptions (gameTextId) {
+  removeFromPlayerDialogOptions (gameTextId) {
     return this.playerDialogOptions.filter(item => item.id !== gameTextId)
   }
 
@@ -126,7 +126,7 @@ export default class extends Phaser.State {
    * @param {number} gameTextId
    * @returns {array}
    */
-  removeFormPlayerInsultOptions (gameTextId) {
+  removeFromPlayerInsultOptions (gameTextId) {
     return this.playerInsultOptions.filter(id => id !== gameTextId)
   }
 
@@ -139,10 +139,10 @@ export default class extends Phaser.State {
 
     switch (this.state) {
       case this.STATE.NORMAL :
-        this.playerDialogOptions = this.removeFormPlayerDialogOptions(gameTextId)
+        this.playerDialogOptions = this.removeFromPlayerDialogOptions(gameTextId)
         break
       case this.STATE.INSULT :
-        const newInsultOptions = this.removeFormPlayerInsultOptions(gameTextId)
+        const newInsultOptions = this.removeFromPlayerInsultOptions(gameTextId)
         const defaultInsultOptions = this.game.insultCollectionsService.getDefaultInsults()
         this.playerInsultOptions = [...newInsultOptions, ...defaultInsultOptions]
         break
@@ -160,6 +160,9 @@ export default class extends Phaser.State {
    * @param {string} turnOutcome 'win' or 'loose'
    */
   onEnemySpeechEnd (turnOutcome) {
+    console.log('state: ', this.state)
+    console.log('turnOutcome: ', turnOutcome)
+
     switch (this.state) {
       case this.STATE.NORMAL :
 
@@ -359,6 +362,10 @@ export default class extends Phaser.State {
     const textObjecId = looserJedi.looseDialogId
     const textObject = this.game.dialogService.getTextObject(textObjecId)
 
+    console.log('losserJedi: ', looserJedi)
+    console.log('looseCombat: ', textObjecId)
+    console.log('textObject: ', textObject)
+
     // Store beaten enemy-jedis on game
     if (typeof this.game.wins === 'undefined') {
       this.game.wins = []
@@ -369,6 +376,11 @@ export default class extends Phaser.State {
     }
 
     if (typeof textObject !== 'undefined') {
+
+      if (typeof textObject.text === 'undefined') {
+        this.onGameEnd()
+      }
+
       // Say text if there is any..
       looserJedi.loose(textObject.text, this.onGameEnd.bind(this))
     } else {
