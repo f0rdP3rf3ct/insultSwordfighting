@@ -18,7 +18,13 @@ export default class extends Phaser.BitmapText {
 
   setDialogOption (option) {
     this.option = option
-    this.setText(option.text)
+    if (Array.isArray(option.text)) {
+      let concatString = '';
+      option.text.forEach((item) => { concatString += ' ' + item })
+      this.setText(concatString)
+    } else {
+      this.setText(option.text)
+    }
   }
 
   update () {

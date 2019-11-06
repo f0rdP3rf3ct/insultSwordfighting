@@ -2,23 +2,23 @@
     "gameText" : [
         {
             "id": 1,
-            "text": ["Chumm mit cho star wars luege!", "isch würklch o z letscht mau"]
+            "text": ["Geile Laser-Stick Dude!"]
         },
         {
             "id": 2,
-            "text": ["Werum het ds Spiu", "eigentlich keni SoundEffects?"]
+            "text": ["Chum scho. Gib mer eifch dis Passwort.", "BITTE!?"]
         },
         {
             "id": 3,
-            "text": ["Ke zit für ds!"]
+            "text": ["Ke zit für ds! Muess witer..."]
         },
         {
             "id": 4,
-            "text": ["I bi dr lukas! Ä mächtige Jedi", "U du bechunsch iz de gd Stress"]
+            "text": ["I bi dr lukas! Ä mächtige Jedi", "U du bechunnsch iz de gd Stress"]
         },
         {
             "id": 5,
-            "text": ["Fing mau Royality-free LaserSchwert Effekte.", "Da bechunsch Vögu!"]
+            "text": ["Nätte versuech!", "Sicher nid!"]
         },
         {
             "id": 6,
@@ -38,15 +38,15 @@
         },
         {
             "id": 10,
-            "text": ["NIEMAUS! Zersch muesch zeige was de druff hesch!"]
+            "text": ["Merci! Di Presenter isch aber o nid schlächt"]
         },
         {
             "id": 11,
-            "text": ["...", "hole iz de polizei"]
+            "text": ["Talk nie meh IN-BETWEEN!", "Di Stick splasht doch nid richtig"]
         },
         {
             "id": 12,
-            "text": ["Ja ga nä no ga ne Velotour mache oder so", "Bi scho ne geile Siech"]
+            "text": ["Lieber würdi uf enes Summerzwiku verzichte"]
         },
         {
             "id": 13,
@@ -54,23 +54,23 @@
         },
         {
             "id": 14,
-            "text": ["Ja!", "macht öbbe gd bock zum inesuufe"]
+            "text": ["NIEMAUS!", "Zersch muesch zeige was de druff hesch"]
         },
         {
             "id": 15,
             "text": [
                 "Lukas...",
                 "LUKAS!!",
-                "Los zue, du dubbu!",
-                "Du muesch di drü gigle überzüge",
+                "Los zue, du Dubbu!",
+                "Es git ä erschütterig vor MACHT...",
+                "Du muesch di drü gigle schlah",
                 "STEFAN...",
                 "KUSI...",
                 "U dr DÄMU",
-                "mit is chino z cho!!",
                 "Ds geit nume mit ere Rundi...",
                 "...",
-                "BELEIDIGUNGS LASER SCHWERTKAMPF",
-                "Due muesch aui 3 Dubble Schlah",
+                "BELEIDIGUNGS LASER SCHWERTKAMPF (TM)",
+                "Due muesch aui 3 Gigle schlah...",
                 "umer z Passwort säge!"
             ]
         },
@@ -78,8 +78,7 @@
             "id": 16,
             "text": [
                 "OU MAN",
-                "Du hesch gwunne!",
-                "I chume mit",
+                "Du gwinnsch...",
                 "Mis Passwort isch..",
                 "DR"
             ]
@@ -88,7 +87,6 @@
             "id": 17,
             "text": [
                 "HOPPLA",
-                "Äuä scho chli bsoffe!",
                 "Du gwinnsch...",
                 "Mis Passwort isch..",
                 "LUKAS"
@@ -128,15 +126,15 @@
         },
         {
             "id": 100,
-            "text": ["Damian Häner", "Post Finance"]
+            "text": ["DAMIAN HÄNER", "Postfinance"]
         },
         {
             "id": 103,
-            "text": ["Gigu!", "I bi dr Kusi", "ga iz de gd ga inebiere"]
+            "text": ["Gigu!", "I bi dr KUSI", "gang us wäg, wott ga inebiere"]
         },
         {
             "id": 105,
-            "text": ["Hallo!", "bi dr Stifu", "ws bisch de für ne dubbu?"]
+            "text": ["Hallo!", "bi dr STIFU", "Wie TALKST du eigentlich mit mir?"]
         },
         {
             "id": 1001,
@@ -168,7 +166,7 @@
         },
         {
             "id": 2001,
-            "text": ["Ach ja!"]
+            "text": ["Öbbis bessers chunnt dr nid i Sinn?"]
         },
         {
             "id": 2002,
@@ -188,7 +186,7 @@
         },
         {
             "id": 2006,
-            "text": ["I hofe du hesch iz glehrt, das meh nid Nase-Grüblet"]
+            "text": ["I hoffe du hesch iz glehrt, das meh nid ir Nase grüblet"]
         },
         {
             "id": 2007,
@@ -200,7 +198,7 @@
         },
         {
             "id": 2009,
-            "text": ["De wäri ja zimlech im Arsch, wese jemaus benützisch"]
+            "text": ["De wäri ja zimlech im Arsch, wese würdsch benütze"]
         }
     ],
     "insultSolutions":[

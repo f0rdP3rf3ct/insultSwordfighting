@@ -33,11 +33,11 @@ export default class extends Phaser.Sprite {
   }
 
   createButtons () {
-    this.upButton = this.game.add.button(-150, 0, 'gameAssets', this.onArrowUpClick, this, 'arrow_up', 'arrow_up', 'arrow_up')
-    this.downButton = this.game.add.button(-150, 50, 'gameAssets', this.onArrowDownClick, this, 'arrow_down', 'arrow_down', 'arrow_down')
+    this.upButton = this.game.add.button(0, 0, 'gameAssets', this.onArrowUpClick, this, 'arrow_up', 'arrow_up', 'arrow_up')
+    this.downButton = this.game.add.button(0, 50, 'gameAssets', this.onArrowDownClick, this, 'arrow_down', 'arrow_down', 'arrow_down')
 
-    this.upButton.x = 0
-    this.downButton.x = 0
+    this.upButton.x = 30
+    this.downButton.x = 30
 
     this.upButton.visible = false
     this.downButton.visible = false
@@ -82,7 +82,7 @@ export default class extends Phaser.Sprite {
 
         let nextOption = this.optionDisplayObjects[optionIndex + 1]
 
-        const dialogOffset = 5
+        const dialogOffset = 10
 
         if (typeof nextOption !== 'undefined') {
           nextOption.y = opt.y + opt.height + dialogOffset
@@ -109,7 +109,7 @@ export default class extends Phaser.Sprite {
   }
 
   /**
-   * Erase old Dialogoptions and create a new set
+   * Erase old Dialog options and create a new set
    * @param options {array}
    */
   setDialogOptions (options) {

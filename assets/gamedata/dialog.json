@@ -5,7 +5,7 @@
             "textMapping" : [
                 {
                     "requestTextIds": [1],
-                    "responseTextId" : 2
+                    "responseTextId" : 10
                 },
                 {
                   "requestTextIds": [2],
@@ -14,7 +14,7 @@
             ],
             "actionMapping" : [
                 {
-                    "requestTextIds": [1,4],
+                    "requestTextIds": [4],
                     "responseAction": "startFight"
                 },
                 {
@@ -33,7 +33,7 @@
           "textMapping" : [
             {
               "requestTextIds": [1],
-              "responseTextId" : 2
+              "responseTextId" : 10
             },
             {
               "requestTextIds": [2],
@@ -42,7 +42,7 @@
           ],
           "actionMapping" : [
             {
-              "requestTextIds": [1,4],
+              "requestTextIds": [4],
               "responseAction": "startFight"
             },
             {
@@ -61,7 +61,7 @@
           "textMapping" : [
             {
               "requestTextIds": [1],
-              "responseTextId" : 10
+              "responseTextId" : 11
             },
             {
               "requestTextIds": [2],
